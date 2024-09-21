@@ -40,13 +40,9 @@ const slice = createSlice({
       state.userText = action.payload;
     },
     setInputSize: (state, action) => {
-      console.log(action);
-      console.log(state.inputSize);
-
       state.inputSize = action.payload;
     },
     setLabelPosition: (state, action) => {
-      console.log(action.payload);
       state.labelPosition = action.payload;
     },
     setHelperText: (state, action) => {
