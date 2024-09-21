@@ -39,10 +39,12 @@ export const Required = styled.span`
     left: 50%;
     padding: 8px 12px;
     font-size: 12px;
-    color: ${colors.WHITE};
+    color: ${({ $whiteTheme }) =>
+      $whiteTheme ? `${colors.WHITE}` : `${colors.BLACK}`};
     border: none;
     border-radius: 8px;
-    background-color: ${colors.BLACK};
+    background-color: ${({ $whiteTheme }) =>
+      $whiteTheme ? `${colors.BLACK}` : `${colors.GREY}`};
     transform: translate(-50%, -100%);
     opacity: 0;
     pointer-events: none;
